@@ -98,20 +98,131 @@ textarea {
    ========================================================================== */
 
 
+/*--------------- Base styles: header and footer ----------*/
+
+header,
+footer {
+    
+}
+
+/* ---------------- header styles ---------------------------- */
+
+header {
+
+}
+
+header .content-wrapper {
+
+}
+
+.header-divider { /* space between logo and nav bar */
+
+}
+
+header nav { /* nav bar styles */
+
+}
+
+
+/* ------------ footer styles ------------------------ */
+
+footer .content-wrapper {
+
+}
+
+footer .footer-content {
+
+}
+
+footer address {
+
+}
+
+footer .social {
+
+}
+
+footer .social-icons {
+
+}
+
+footer .copyright {
+
+}
+
+
+/* -------------- Mobile styles Homepage - --------------*/
+
+.hero-area {
+
+}
+
+aside {
+
+}
+
+aside .content-wrapper {
+
+}
+
+.form-description {
+
+}
+
+.signup-form {
+
+}
+
+.features .content-wrapper {
+
+}
+
+.feature-items {
+
+}
+
+.review {
+
+}
 
 
 
+/* -------------- Mobile styles About -------------------*/
+
+.mission {
+
+}
+
+.mission-content {
+
+}
+
+.map {
+
+}
+
+.contact-section {
+
+}
+
+.contact-section address {
+
+}
 
 
+/* -------------- Mobile styles FAQ ---------------------*/
 
+.faq {
 
+}
 
+.faq .content-wrapper {
 
+}
 
+.faq-content {
 
-
-
-
+}
 
 /* ==========================================================================
    Helper classes
