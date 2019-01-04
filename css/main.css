@@ -192,15 +192,25 @@ footer .copyright {
 /* -------------- Mobile styles Homepage - --------------*/
 
 .hero-area {
-
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 30px; /* space to left page border */
 }
 
 aside {
+    display: flex; /* to center the content */
+    align-items: center;
+    justify-content: center;
+    flex-flow: column nowrap; /* to put all main area content items below of each other */
 
 }
 
 aside .content-wrapper {
-
+    display: flex; /* to allow putting the "want to join..." section and the form next to each other and center */
+    align-items: center;
+    justify-content: center;
+    padding: 0 30px; /* space to left + right page border */
 }
 
 .form-description {
@@ -216,6 +226,13 @@ aside .content-wrapper {
 }
 
 .feature-items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.features h1 {
+    padding: 0 30px; /* space to left + right page border */
 
 }
 
