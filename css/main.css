@@ -229,6 +229,7 @@ aside .content-wrapper {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-flow: row wrap; /* to wrap the items  */
 }
 
 .features h1 {
@@ -237,10 +238,19 @@ aside .content-wrapper {
 }
 
 .review {
-
+    display: flex;
+    padding: 0 30px; /* space to left + right page border */
+    align-items: flex-start;
+    justify-content: center;
+    flex-flow: column nowrap;
 }
 
-
+.review .content-wrapper1 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-flow: row nowrap;
+}
 
 /* -------------- Mobile styles About -------------------*/
 
