@@ -298,11 +298,18 @@ aside .content-wrapper {
 /* -------------- Mobile styles FAQ ---------------------*/
 
 .faq {
-
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-flow: column nowrap;
+    padding: 0 30px;
 }
 
 .faq .content-wrapper {
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
 }
 
 .faq-content {
