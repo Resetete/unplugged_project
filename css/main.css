@@ -109,6 +109,7 @@ header,
 footer {
     width: 100%;
     display: flex;
+    flex-flow: row wrap;
 }
 
 /* ---------------- header styles ---------------------------- */
@@ -118,7 +119,7 @@ header .content-wrapper {
     width: 100%;
     align-items: center;
     justify-content: center;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
 }
 
 .header-divider { /* space between logo and nav bar */
@@ -131,6 +132,8 @@ header .content-wrapper {
 
 header nav { /* nav bar styles */
     align-items: flex-end; /* lets nav bar appear at end of header */
+    justify-content: space-around;
+    flex-flow: row wrap;
     padding: 0 30px 0 0; /*to make sure the nav bar keeps some space to the header end */
 }
 
@@ -138,6 +141,7 @@ header nav { /* nav bar styles */
 header nav ul {
   display: flex; /* so that the li elements become flex items */
   justify-content: flex-start;
+  align-items: center;
   margin: 0px;
   padding: 0px;
 }
@@ -158,7 +162,8 @@ footer .content-wrapper {
 footer .footer-content {
     display: flex;
     align-items: center;
-    justify-content: space-around; /* to get space between the contact and social media parts and to the page end*/
+    justify-content: center; /* to get space between the contact and social media parts and to the page end*/
+    flex-flow: row wrap;
 }
 
 footer address {
@@ -168,7 +173,7 @@ footer address {
 footer .social {
     display: flex;
     align-items: center;
-    justify-content: space;
+    justify-content: center;
     flex-flow: column wrap;
 }
 
@@ -179,7 +184,7 @@ footer .social-icons {
 }
 
 footer {
-    flex-flow: column; /* to turn the two divs ("content-wrapper" + "copyright") into flex items + let them appear below  */
+    flex-flow: column wrap; /* to turn the two divs ("content-wrapper" + "copyright") into flex items + let them appear below  */
 }
 
 footer .copyright {
