@@ -116,7 +116,8 @@ footer {
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
   margin: 0px;
   padding: 0px;
 }
@@ -327,44 +328,64 @@ aside .content-wrapper {
 /* -------------- Mobile styles About -------------------*/
 
 .mission {
-    display. flex;
+    display: flex;
     justify-content: center;
     align-items: center;
-    flex-flow: column nowrap;
+    flex-flow: column;
 }
 
 .mission .content-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-flow: column nowrap; /* to have the header and the mission content below of each other */
-    padding: 0 30px;
+    flex-flow: column; /* to have the header and the mission content below of each other */
+}
+
+.mission h2 {
+    padding-top: 50px ;
+    padding-bottom: 20px;
+    width: 88%;
 }
 
 .mission-content {
-    display: flex; /* to have the  */
-    align-items: center;
-    justify-content: space-between;
+    width: 88%;
 }
 
+.mission p {
+    padding-bottom: 20px;
+}
 
 .map {
+    width: 100%;
+}
 
+.contact-section {
+    width: 88%;
 }
 
 .contact-section .content-wrapper {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
-    flex-flow: column nowrap;
+    flex-flow: column;
+}
+
+.contact-section .content-wrapper h2 {
+    padding: 20px 0;
 }
 
 .contact-section address {
     display: flex; /* to get the general info and chat with facilitator beside each other */
     align-items: flex-start; /* have both headlines at the same hight */
     justify-content: center;
-    flex-flow: row nowrap;
+    flex-flow: column;
 }
+
+
+.contact-section address p {
+    padding: 17px 0;
+}
+
 
 
 /* -------------- Mobile styles FAQ ---------------------*/
