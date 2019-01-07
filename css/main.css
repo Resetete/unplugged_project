@@ -109,38 +109,53 @@ header,
 footer {
     width: 100%;
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-flow: row wrap;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0px;
+  padding: 0px;
+}
+
+p {
+  margin: 0px;
+  padding: 0px;
 }
 
 /* ---------------- header styles ---------------------------- */
 
 header .content-wrapper {
     display: flex; /* make the  */
-    width: 100%;
+    width: 88%;
     align-items: center;
     justify-content: center;
     flex-flow: row wrap;
 }
 
+/* ONLY for DESKTOP
 .header-divider { /* space between logo and nav bar */
-    flex-grow: 1; /* lets the space grow automatically */
-}
+  /*  flex-grow: 1; /* lets the space grow automatically */
+/*} */
 
-.logo {
+/*.logo {
   padding: 0 0 0 30px; /*to make sure the logo keeps some space to the page start */
-}
+/*} */
 
 header nav { /* nav bar styles */
-    align-items: flex-end; /* lets nav bar appear at end of header */
-    justify-content: space-around;
+    align-items: center; /* lets nav bar appear at end of header */
+    justify-content: center;
     flex-flow: row wrap;
-    padding: 0 30px 0 0; /*to make sure the nav bar keeps some space to the header end */
+    width: 60%;
 }
 
 
 header nav ul {
   display: flex; /* so that the li elements become flex items */
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   margin: 0px;
   padding: 0px;
@@ -149,7 +164,6 @@ header nav ul {
 header nav ul li {
   display: inline;
   margin: 0 10px;
-
 }
 
 
@@ -163,28 +177,31 @@ footer .footer-content {
     display: flex;
     align-items: center;
     justify-content: center; /* to get space between the contact and social media parts and to the page end*/
-    flex-flow: row wrap;
+    flex-flow: column;
 }
 
 footer address {
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
 }
 
 footer .social {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-flow: column wrap;
+    flex-flow: column;
 }
 
 footer .social-icons {
     display: flex; /* to let the social icons appear below */
-    align-items:  center;
-    justify-content: space-around;
+    align-items: center;
+    justify-content: space-between;
 }
 
 footer {
-    flex-flow: column wrap; /* to turn the two divs ("content-wrapper" + "copyright") into flex items + let them appear below  */
+    flex-flow: column; /* to turn the two divs ("content-wrapper" + "copyright") into flex items + let them appear below  */
 }
 
 footer .copyright {
@@ -196,26 +213,35 @@ footer .copyright {
 
 /* -------------- Mobile styles Homepage - --------------*/
 
+main {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
+}
+
 .hero-area {
     display: flex;
     align-items: center;
-    justify-content: flex-start;
-    padding-left: 30px; /* space to left page border */
+    justify-content: center;
+    width: 88%;
+    margin: 0;
 }
 
 aside {
     display: flex; /* to center the content */
     align-items: center;
     justify-content: center;
-    flex-flow: column nowrap; /* to put all main area content items below of each other */
+    flex-flow: column; /* to put all main area content items below of each other */
 
 }
 
 aside .content-wrapper {
     display: flex; /* to allow putting the "want to join..." section and the form next to each other and center */
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
-    padding: 0 30px; /* space to left + right page border */
+    flex-flow: column;
+    width: 88%;
 }
 
 .form-description {
@@ -223,7 +249,10 @@ aside .content-wrapper {
 }
 
 .signup-form {
-
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-flow: column;
 }
 
 .features .content-wrapper {
@@ -237,24 +266,29 @@ aside .content-wrapper {
     flex-flow: row wrap; /* to wrap the items  */
 }
 
+.features article {
+  width: 51%;
+}
+
 .features h1 {
     padding: 0 30px; /* space to left + right page border */
 
 }
 
+
 .review {
     display: flex;
-    padding: 0 30px; /* space to left + right page border */
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
-    flex-flow: column nowrap;
+    flex-flow: column;
+    width: 88%;
 }
 
-.review .content-wrapper1 {
+.review .content-wrapper {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
-  flex-flow: row nowrap;
+  justify-content: center;
+  flex-flow: column;
 }
 
 /* -------------- Mobile styles About -------------------*/
