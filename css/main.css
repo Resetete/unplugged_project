@@ -192,7 +192,7 @@ footer address {
     align-items: center;
     justify-content: center;
     flex-flow: column;
-    padding-bottom: 46px; 
+    padding-bottom: 46px;
 }
 
 footer .social {
@@ -229,19 +229,23 @@ main {
   flex-flow: column;
 }
 
+
 .hero-area {
     display: flex;
     align-items: stretch;
     justify-content: flex-start;
     height: 100vh; /* to have the hero image stretched over whole screen (100% vertical height)*/
-    width: 88%;
     margin: 0;
+    width: 88%;
 }
 
 .hero-area h1 {
     padding-top: 53px;
 }
 
+.hero-area .content-wrapper {
+    width:100%;
+}
 
 aside {
     display: flex; /* to center the content */
@@ -324,6 +328,7 @@ aside .content-wrapper {
   align-items: center;
   justify-content: center;
   flex-flow: column;
+  width: 100%;
 }
 
 /* -------------- Mobile styles About -------------------*/
@@ -504,15 +509,12 @@ aside .content-wrapper {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
+@media only screen and (min-width: 768px) {
+  /* ------------ Tablet styles here ------------*/
 }
 
-@media print,
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 1.25dppx),
-       (min-resolution: 120dpi) {
-    /* Style adjustments for high resolution devices */
+@media only screen and (min-width: 1200px) {
+  /* ------------ Desktop styles here ------------*/
 }
 
 /* ==========================================================================
