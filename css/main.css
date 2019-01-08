@@ -283,15 +283,21 @@ aside .content-wrapper {
     width: 88%;
 }
 
+.features .content-wrapper {
+      width: 100%;
+}
+
 .feature-items {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-flow: row wrap; /* to wrap the items  */
+    flex-flow: column; /* to wrap the items  */
 }
 
+
+
 .features article {
-  width: 58%;
+  width: 50%;
 }
 
 .feature-items p {
@@ -511,6 +517,23 @@ aside .content-wrapper {
 
 @media only screen and (min-width: 768px) {
   /* ------------ Tablet styles here ------------*/
+    aside .content-wrapper {
+      flex-flow: row nowrap;
+      justify-content: space-around;
+    }
+
+    .form-description {
+      padding: 0;
+      /*flex-basis: 260px;*/
+    }
+
+    .signup-form {
+      /*flex-basis: 290px;*/
+    }
+
+    .feature-items {
+
+    }
 }
 
 @media only screen and (min-width: 1200px) {
