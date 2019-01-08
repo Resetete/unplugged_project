@@ -277,7 +277,7 @@ aside .content-wrapper {
 
 .features {
     display: flex;
-    align-items: center;
+    align-items: flex-start; /* to set the headline to the left */
     justify-content: center;
     flex-flow: column;
     width: 88%;
@@ -311,7 +311,7 @@ aside .content-wrapper {
 
 .review {
     display: flex;
-    align-items: center;
+    align-items: flex-start; /* to set the headline to the left */
     justify-content: center;
     flex-flow: column;
     width: 88%;
@@ -555,12 +555,50 @@ aside .content-wrapper {
 
     .group-photo {
       flex-basis: 320px;
+      padding-right: 20px;
     }
 
 }
 
 @media only screen and (min-width: 1200px) {
   /* ------------ Desktop styles here ------------*/
+  aside .content-wrapper {
+    flex-flow: row nowrap;
+    justify-content: space-around;
+  }
+
+  .form-description {
+    padding: 0;
+    /*flex-basis: 260px;*/
+  }
+
+  .signup-form {
+    /*flex-basis: 290px;*/
+  }
+
+  .feature-items {
+      flex-flow: row wrap; /* to wrap the items  */
+      align-items: flex-start;
+      justify-content: space-between;
+      padding: 0 60px; /* get the space between the features */
+  }
+
+  .features article {
+      flex-basis: 175px; /* sets the width of the element */
+      padding: 0 50px;
+  }
+
+  .review .content-wrapper {
+    flex-flow: row nowrap;
+  }
+
+  .review-text {
+    flex-basis: 490px;
+  }
+
+  .group-photo {
+    flex-basis: 490px;
+    padding-right: 40px;
 }
 
 /* ==========================================================================
