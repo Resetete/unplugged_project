@@ -192,6 +192,7 @@ footer address {
     align-items: center;
     justify-content: center;
     flex-flow: column;
+    padding-bottom: 46px; 
 }
 
 footer .social {
@@ -394,8 +395,16 @@ aside .content-wrapper {
     display: flex;
     align-items: flex-start;
     justify-content: center;
-    flex-flow: column nowrap;
-    padding: 0 30px;
+    flex-flow: column;
+    width: 88%;
+}
+
+.faq h2 {
+  padding-top: 50px;
+}
+
+.faq h3 {
+  padding-bottom: 13px;
 }
 
 .faq .content-wrapper {
@@ -406,7 +415,7 @@ aside .content-wrapper {
 }
 
 .faq-content {
-
+    padding-bottom: 50px;
 }
 
 /* ==========================================================================
