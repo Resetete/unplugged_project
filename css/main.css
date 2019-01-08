@@ -531,9 +531,32 @@ aside .content-wrapper {
       /*flex-basis: 290px;*/
     }
 
-    .feature-items {
 
+
+    .feature-items {
+        flex-flow: row wrap; /* to wrap the items  */
+        align-items: flex-start;
+        justify-content: space-between;
+        padding: 0 60px; /* get the space between the features */
     }
+
+    .features article {
+        flex-basis: 175px; /* sets the width of the element */
+        padding: 0 50px;
+    }
+
+    .review .content-wrapper {
+      flex-flow: row nowrap;
+    }
+
+    .review-text {
+      flex-basis: 320px;
+    }
+
+    .group-photo {
+      flex-basis: 320px;
+    }
+
 }
 
 @media only screen and (min-width: 1200px) {
