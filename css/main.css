@@ -568,6 +568,41 @@ aside .content-wrapper {
       padding-right: 20px;
     }
 
+    /* ------ about styles------- */
+    .mission-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-flow: row nowrap;
+    }
+
+    .mission-content p {
+      flex-basis: 45%; /* to auto grow/shrink --> in % */
+    }
+
+    .contact-section .content-wrapper address {
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        align-items: flex-start;
+        flex-flow: row nowrap;
+      }
+
+  /* ---- FAQ styles ------ */
+  .faq h2 {
+      padding-bottom: 40px;
+  }
+
+  .faq .content-wrapper {
+      flex-flow: row wrap;
+      justify-content: space-between;
+  }
+
+  .faq-content {
+    flex-basis: 45%;
+  }
+
+  /* ---- Footer styles ------ */
     footer .content-wrapper {
       width: 100%;
     }
@@ -633,12 +668,26 @@ aside .content-wrapper {
     flex-basis: 45%; /* to auto grow/shrink --> in % */
   }
 
-.contact-section .content-wrapper address {
-    display: flex;
-    width: 100%;
-    justify-content: space-around;
-    align-items: flex-start;
-    flex-flow: row nowrap;
+  .contact-section .content-wrapper address {
+      display: flex;
+      width: 100%;
+      justify-content: space-around;
+      align-items: flex-start;
+      flex-flow: row nowrap;
+    }
+
+      /* ---- FAQ styles ------ */
+      .faq h2 {
+          padding-bottom: 40px;
+      }
+
+      .faq .content-wrapper {
+          flex-flow: row wrap;
+          justify-content: space-between;
+      }
+
+      .faq-content {
+        flex-basis: 45%;
 }
 
   /* ---- footer styles ------- */
