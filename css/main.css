@@ -98,11 +98,15 @@ textarea {
    ========================================================================== */
 
 
-/*--------------- Base styles: header and footer ----------*/
-
-body,
+/*--------------- Base styles & Global Styles ----------*/
 html {
+  font-size: 16px; /* base font size for ems */
+}
+
+body {
   width: 100%;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
 }
 
 header,
@@ -114,18 +118,40 @@ footer {
     flex-flow: row wrap;
 }
 
-h1,
-h2,
-h3,
+h1 {
+  font-size: 1.38em; /* 22px */
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Poppins', sans-serif;
+}
+
+h3 {
+  font-size: 1em; /* 16px */
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Poppins', sans-serif;
+}
+
 h4 {
   margin: 0px;
   padding: 0px;
+  font-family: 'Poppins', sans-serif;
 }
 
 p {
   margin: 0px;
   padding: 0px;
+  font-size: 0.56em; /* 9px */
+  line-height: 12px;
 }
+
+a { /* styling links */
+  color: #e2e3ed;
+  text-decoration: none;
+}
+
+
+
 
 /* ---------------- header styles ---------------------------- */
 
@@ -171,6 +197,7 @@ header nav ul {
 header nav ul li {
   display: inline;
   margin: 0 10px;
+  text-transform: uppercase;
 }
 
 
