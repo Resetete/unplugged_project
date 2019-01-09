@@ -223,7 +223,7 @@ footer .copyright {
 /* -------------- Mobile styles Homepage - --------------*/
 
 main {
-  display:flex;
+  display: flex;
   align-items: center;
   justify-content: center;
   flex-flow: column;
@@ -244,7 +244,7 @@ main {
 }
 
 .hero-area .content-wrapper {
-    width:100%;
+    width: 100%;
 }
 
 aside {
@@ -551,7 +551,7 @@ aside .content-wrapper {
     }
 
     .features article {
-        flex-basis: 175px; /* sets the width of the element */
+        flex-basis: 23%; /* sets the width of the element */
         padding: 0 50px;
     }
 
@@ -560,11 +560,11 @@ aside .content-wrapper {
     }
 
     .review-text {
-      flex-basis: 320px;
+      flex-basis: 42%;
     }
 
     .group-photo {
-      flex-basis: 320px;
+      flex-basis: 42%;
       padding-right: 20px;
     }
 
@@ -639,7 +639,7 @@ aside .content-wrapper {
   }
 
   .features article {
-      flex-basis: 175px; /* sets the width of the element */
+      flex-basis: 15%; /* sets the width of the element */
       padding: 0 50px;
   }
 
@@ -648,11 +648,11 @@ aside .content-wrapper {
   }
 
   .review-text {
-    flex-basis: 490px;
+    flex-basis: 41%;
   }
 
   .group-photo {
-    flex-basis: 490px;
+    flex-basis: 41%;
     padding-right: 40px;
   }
 
