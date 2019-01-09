@@ -517,6 +517,18 @@ aside .content-wrapper {
 
 @media only screen and (min-width: 768px) {
   /* ------------ Tablet styles here ------------*/
+    header .content-wrapper {
+        flex-flow: row nowrap;
+    }
+
+
+    .header-divider { /* space between logo and nav bar */
+       width: 100%;/* lets the space grow automatically */
+       height: 1px;
+       margin: 10px 0 15px 0;
+    }
+
+
     aside .content-wrapper {
       flex-flow: row nowrap;
       justify-content: space-around;
@@ -530,8 +542,6 @@ aside .content-wrapper {
     .signup-form {
       /*flex-basis: 290px;*/
     }
-
-
 
     .feature-items {
         flex-flow: row wrap; /* to wrap the items  */
@@ -557,6 +567,16 @@ aside .content-wrapper {
       flex-basis: 320px;
       padding-right: 20px;
     }
+
+    footer .content-wrapper {
+      width: 100%;
+    }
+    footer .footer-content {
+      flex-flow: row nowrap;
+      justify-content: space-around;
+      align-items: flex-start;
+    }
+
 
 }
 
@@ -599,8 +619,39 @@ aside .content-wrapper {
   .group-photo {
     flex-basis: 490px;
     padding-right: 40px;
+  }
+
+  /* ------ about styles------- */
+  .mission-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-flow: row nowrap;
+  }
+
+  .mission-content p {
+    flex-basis: 45%; /* to auto grow/shrink --> in % */
+  }
+
+.contact-section .content-wrapper address {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-flow: row nowrap;
 }
 
+  /* ---- footer styles ------- */
+  footer .content-wrapper {
+    width: 100%;
+  }
+  footer .footer-content {
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+
+}
 /* ==========================================================================
    Print styles.
    Inlined to avoid the additional HTTP request:
