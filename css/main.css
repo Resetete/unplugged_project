@@ -125,6 +125,7 @@ h1 {
   margin: 0px;
   padding: 0px;
   font-family: 'Poppins', sans-serif;
+  font-weight: 400;
 }
 
 h3 {
@@ -132,12 +133,14 @@ h3 {
   margin: 0px;
   padding: 0px;
   font-family: 'Poppins', sans-serif;
+  font-weight: 400;
 }
 
 h4 {
   margin: 0px;
   padding: 0px;
   font-family: 'Poppins', sans-serif;
+  font-weight: 400;
 }
 
 p {
@@ -733,17 +736,14 @@ input[type=button] {
 
   h1 {
     font-size: 4em;
-    font-weight: 400;
   }
 
   h2 {
     font-size: 2em;
-    font-weight: 400;
   }
 
   h3 {
     font-size: 1.5em;
-    font-weight: 400;
   }
 
   .logo img {
