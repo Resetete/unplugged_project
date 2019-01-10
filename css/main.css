@@ -809,15 +809,15 @@ figure .group-photo {
 
   .review .content-wrapper {
     flex-flow: row nowrap;
-    justify-content: space-around;
+    justify-content: space-between;
   }
 
   .review-text {
-    flex-basis: 35%;
+    flex-basis: 48%;
   }
 
   .group-photo {
-    flex-basis: 38%
+    flex-basis: 48%
   }
 
   /* ------ about styles------- */
