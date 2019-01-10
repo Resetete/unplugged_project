@@ -104,7 +104,6 @@ html {
 }
 
 body {
-  width: 100%;
   font-family: 'Open Sans', sans-serif;
   font-size: 1em;
   color: #E2E3ED; /* font color for all text elements */
@@ -159,6 +158,13 @@ address {
   font-style: normal;
 }
 
+img { /* to make sure the images take up the whole width */
+  width: 100%;
+}
+
+figure {
+  margin: 0;
+}
 
 /* ---------------- header styles ---------------------------- */
 
@@ -189,8 +195,17 @@ header .content-wrapper {
   width: 100%;
 }
 
-.logo {
-  padding: 0 11px 0 0; /*to make sure the logo keeps some space to the page start */
+/* Logo setting*/
+header figure {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+figure h2 {
+    padding-left: 15px;
 }
 
 
@@ -630,8 +645,9 @@ input[type=button] {
         flex-flow: row nowrap;
     }
 
-    .logo {
-        margin: 0 0 0 6.5%;
+    header figure {
+        width: 100%;
+        flex-flow: row nowrap;
     }
 
     .header-divider { /* space between logo and nav bar */
@@ -746,8 +762,9 @@ input[type=button] {
     font-size: 1.5em;
   }
 
-  .logo img {
-    height: 3em;
+  header figure {
+      width: 80%;
+      flex-flow: row nowrap;
   }
 
   aside .content-wrapper {
