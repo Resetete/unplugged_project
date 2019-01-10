@@ -178,6 +178,7 @@ header .content-wrapper {
     align-items: center;
     justify-content: center;
     flex-flow: row wrap;
+    margin: 0;
 }
 
 header h1 {
@@ -214,10 +215,6 @@ header nav { /* nav bar styles */
     justify-content: center;
     flex-flow: row wrap;
     width: 60%;
-}
-
-#logo-name {
-  text-transform: uppercase;
 }
 
 
@@ -300,7 +297,8 @@ main {
     display: flex;
     align-items: flex-start;
     justify-content: center;
-    height: 40vh; /* to have the hero image stretched over whole screen (100% vertical height)*/
+    /*min-height: 500px;*/
+    height: 60vh; /* to have the hero image stretched over whole screen (100% vertical height)*/
     margin: 0;
     width: 100%;
     background: url('../img/hero.jpg') center top no-repeat #333;
@@ -420,18 +418,20 @@ input[type=button] {
 .review {
     display: flex;
     align-items: center; /* to set the headline to the left */
-    justify-content: center;
+    justify-content: space-between;
     flex-flow: column;
     width: 100%;
     background-color: #2A423A;
 }
 
-.review-wrapper {
+/*.review-wrapper {
     width: 88%;
     margin: 50px 0;
-}
+} */
 
-.group-photo img {
+
+
+figure .group-photo {
     width: 100%;
 }
 
@@ -447,6 +447,7 @@ input[type=button] {
   justify-content: center;
   flex-flow: column;
   width: 100%;
+  margin: 50px 0;
 }
 
 /* -------------- Mobile styles About -------------------*/
@@ -687,38 +688,48 @@ input[type=button] {
         padding: 0 50px;
     }
 
+    .review {
+        display:flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .review-wrapper {
+        width: 88%;
+      }
+
     .review .content-wrapper {
       flex-flow: row nowrap;
+      justify-content: space-between;
     }
 
     .review-text {
-      flex-basis: 42%;
+      flex-basis: 48%;
     }
 
     .group-photo {
-      flex-basis: 42%;
-      padding-right: 20px;
-    }
+      flex-basis: 48%
+   }
 
     /* ------ about styles------- */
-    .mission-content {
+  .mission-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-flow: row nowrap;
+  }
+
+  .mission-content p {
+     flex-basis: 45%; /* to auto grow/shrink --> in % */
+  }
+
+  .contact-section .content-wrapper address {
       display: flex;
-      align-items: center;
-      justify-content: space-between;
+      width: 100%;
+      justify-content: space-around;
+      align-items: flex-start;
       flex-flow: row nowrap;
-    }
-
-    .mission-content p {
-      flex-basis: 45%; /* to auto grow/shrink --> in % */
-    }
-
-    .contact-section .content-wrapper address {
-        display: flex;
-        width: 100%;
-        justify-content: space-around;
-        align-items: flex-start;
-        flex-flow: row nowrap;
-      }
+  }
 
   /* ---- FAQ styles ------ */
   .faq h2 {
@@ -735,14 +746,15 @@ input[type=button] {
   }
 
   /* ---- Footer styles ------ */
-    footer .content-wrapper {
+  footer .content-wrapper {
       width: 100%;
-    }
-    footer .footer-content {
+  }
+
+  footer .footer-content {
       flex-flow: row nowrap;
       justify-content: space-around;
       align-items: flex-start;
-    }
+  }
 
 
 }
@@ -785,17 +797,27 @@ input[type=button] {
       padding: 0 50px;
   }
 
+  .review {
+      display:flex;
+      align-items: center;
+      justify-content: center;
+  }
+
+  .review-wrapper {
+      width: 88%;
+    }
+
   .review .content-wrapper {
     flex-flow: row nowrap;
+    justify-content: space-around;
   }
 
   .review-text {
-    flex-basis: 41%;
+    flex-basis: 35%;
   }
 
   .group-photo {
-    flex-basis: 41%;
-    padding-right: 40px;
+    flex-basis: 38%
   }
 
   /* ------ about styles------- */
@@ -808,7 +830,7 @@ input[type=button] {
 
   .mission .content-wrapper {
       background-color: #537158;
-}
+  }
 
   .mission-content {
     display: flex;
@@ -827,21 +849,21 @@ input[type=button] {
       justify-content: space-around;
       align-items: flex-start;
       flex-flow: row nowrap;
-    }
+  }
 
-      /* ---- FAQ styles ------ */
-      .faq h2 {
-          padding-bottom: 40px;
-      }
+  /* ---- FAQ styles ------ */
+  .faq h2 {
+      padding-bottom: 40px;
+  }
 
-      .faq .content-wrapper {
-          flex-flow: row wrap;
-          justify-content: space-between;
-      }
+  .faq .content-wrapper {
+      flex-flow: row wrap;
+      justify-content: space-between;
+  }
 
-      .faq-content {
-        flex-basis: 45%;
-}
+  .faq-content {
+      flex-basis: 45%;
+  }
 
   /* ---- footer styles ------- */
   footer .content-wrapper {
