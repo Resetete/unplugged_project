@@ -107,6 +107,7 @@ body {
   width: 100%;
   font-family: 'Open Sans', sans-serif;
   font-size: 1em;
+  color: #E2E3ED; /* font color for all text elements */
 }
 
 header,
@@ -116,6 +117,7 @@ footer {
     align-items: center;
     justify-content: center;
     flex-flow: row wrap;
+    background-color: #202322;
 }
 
 h1 {
@@ -141,8 +143,8 @@ h4 {
 p {
   margin: 0px;
   padding: 0px;
-  font-size: 0.56em; /* 9px */
-  line-height: 12px;
+  font-size: 1em; /* 9px */
+  line-height: 1.1em;
 }
 
 a { /* styling links */
@@ -150,7 +152,9 @@ a { /* styling links */
   text-decoration: none;
 }
 
-
+address {
+  font-style: normal;
+}
 
 
 /* ---------------- header styles ---------------------------- */
@@ -167,22 +171,35 @@ header .content-wrapper {
     flex-flow: row wrap;
 }
 
+header h1 {
+    text-transform: uppercase;
+}
 
 .header-divider { /* space between logo and nav bar */
    width: 100%;/* lets the space grow automatically */
    height: 1px;
    margin: 10px 0 15px 0;
+   border-top: 1px solid #3A3A3A;
 }
 
-/*.logo {
-  padding: 0 0 0 30px; /*to make sure the logo keeps some space to the page start */
-/*} */
+header .content-wrapper {
+  width: 100%;
+}
+
+.logo {
+  padding: 0 11px 0 0; /*to make sure the logo keeps some space to the page start */
+}
+
 
 header nav { /* nav bar styles */
     align-items: center; /* lets nav bar appear at end of header */
     justify-content: center;
     flex-flow: row wrap;
     width: 60%;
+}
+
+#logo-name {
+  text-transform: uppercase;
 }
 
 
@@ -243,7 +260,7 @@ footer .copyright {
     display: flex; /* to turn p element into flex item */
     align-items: center;
     justify-content: center;
-    margin: 0 0 20px 0;
+    margin: 0 0 5px 0;
 }
 
 
@@ -259,11 +276,13 @@ main {
 
 .hero-area {
     display: flex;
-    align-items: stretch;
-    justify-content: flex-start;
-    height: 100vh; /* to have the hero image stretched over whole screen (100% vertical height)*/
+    align-items: flex-start;
+    justify-content: center;
+    height: 40vh; /* to have the hero image stretched over whole screen (100% vertical height)*/
     margin: 0;
-    width: 88%;
+    width: 100%;
+    background: url('../img/hero.jpg') center top no-repeat;
+    background-size: cover;
 }
 
 .hero-area h1 {
@@ -271,7 +290,8 @@ main {
 }
 
 .hero-area .content-wrapper {
-    width: 100%;
+    width: 88%;
+
 }
 
 aside {
@@ -279,7 +299,8 @@ aside {
     align-items: center;
     justify-content: center;
     flex-flow: column; /* to put all main area content items below of each other */
-
+    background-color: #537158;
+    width: 100%;
 }
 
 aside .content-wrapper {
@@ -288,10 +309,17 @@ aside .content-wrapper {
     justify-content: center;
     flex-flow: column;
     width: 88%;
+    padding: 50px 0;
 }
 
+
 .form-description {
-    padding: 30px 0;
+    flex-basis: 80%;
+    margin-right: 40px;
+}
+
+.form-description p {
+    padding-top: 10px;
 }
 
 aside .signup-form {
@@ -299,8 +327,11 @@ aside .signup-form {
     align-items: flex-start;
     justify-content: center;
     flex-flow: column;
-    padding-bottom: 50px;
     width: 100%;
+}
+
+aside .signup-form h3 {
+    padding-bottom: 10px;
 }
 
 /* ---- button styling ----- */
@@ -315,7 +346,7 @@ input[type=button] {
   width: 100%;
   padding: 20px 0;
   margin-top: 20px;
-  background-color: #2a434a;
+  background-color: #2A423A;
   font-family: 'Poppins', Helvetica, Arial, sans-serif;
   font-weight: 500;
   font-size: 1.125em;
@@ -327,14 +358,21 @@ input[type=button] {
 
 .features {
     display: flex;
-    align-items: flex-start; /* to set the headline to the left */
+    align-items: center; /* to set the headline to the left */
     justify-content: center;
     flex-flow: column;
-    width: 88%;
+    width: 100%;
+    background: url('../img/background-info.jpg') center center no-repeat ;
+    background-size: cover;
+
 }
 
 .features .content-wrapper {
-      width: 100%;
+      width: 88%;
+}
+
+.features h2 {
+      width: 88%;
 }
 
 .feature-items {
@@ -343,8 +381,6 @@ input[type=button] {
     justify-content: center;
     flex-flow: column; /* to wrap the items  */
 }
-
-
 
 .features article {
   width: 50%;
@@ -361,23 +397,27 @@ input[type=button] {
 
 .review {
     display: flex;
-    align-items: flex-start; /* to set the headline to the left */
+    align-items: center; /* to set the headline to the left */
     justify-content: center;
     flex-flow: column;
-    width: 88%;
+    width: 100%;
+    background-color: #2A423A;
 }
 
-.review h2 {
-    padding: 54px 0 29px 0;
+.review-wrapper {
+    width: 88%;
+    margin: 50px 0;
 }
+
+.group-photo img {
+    width: 100%;
+}
+
 
 .review h3 {
     padding: 24px 0;
 }
 
-.review p {
-    padding-bottom: 50px;
-}
 
 .review .content-wrapper {
   display: flex;
@@ -394,6 +434,7 @@ input[type=button] {
     justify-content: center;
     align-items: center;
     flex-flow: column;
+    width: 88%;
 }
 
 .mission .content-wrapper {
@@ -401,15 +442,16 @@ input[type=button] {
     justify-content: center;
     align-items: center;
     flex-flow: column; /* to have the header and the mission content below of each other */
+    padding: 50px 0;
+    width: 100%;
+    background-color: #537158;
 }
 
 .mission h2 {
-    padding-top: 50px ;
-    padding-bottom: 20px;
     width: 88%;
 }
 
-.mission-content {
+.mission .mission-content {
     width: 88%;
 }
 
@@ -419,21 +461,29 @@ input[type=button] {
 
 .map {
     width: 100%;
+    height: 100px;
 }
 
 .contact-section {
-    width: 88%;
+    width: 100%;
+    background-color: #2A423A;
 }
 
 .contact-section .content-wrapper {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
     flex-flow: column;
+    width: 100%;
+    margin: 50px 0;
 }
 
 .contact-section .content-wrapper h2 {
-    padding: 20px 0;
+    width: 88%;
+}
+
+.contact-content {
+    width: 88%;
 }
 
 .contact-section address {
@@ -571,13 +621,20 @@ input[type=button] {
         flex-flow: row nowrap;
     }
 
-
-    .header-divider { /* space between logo and nav bar */
-       width: 100%;/* lets the space grow automatically */
-       height: 1px;
-       margin: 10px 0 15px 0;
+    .logo {
+        margin: 0 0 0 6.5%;
     }
 
+    .header-divider { /* space between logo and nav bar */
+       flex-grow: 1;/* lets the space grow automatically */
+       height: 1px;
+       margin: 10px 0 15px 0;
+       border: none;
+    }
+
+    aside {
+      padding: 50px 0;
+    }
 
     aside .content-wrapper {
       flex-flow: row nowrap;
@@ -667,19 +724,31 @@ input[type=button] {
 
 @media only screen and (min-width: 1200px) {
   /* ------------ Desktop styles here ------------*/
+
+  h1 {
+    font-size: 4em;
+    font-weight: 400;
+  }
+
+  h2 {
+    font-size: 2em;
+    font-weight: 400;
+  }
+
+  h3 {
+    font-size: 1.5em;
+    font-weight: 400;
+  }
+
+  .logo img {
+    height: 3em;
+  }
+
   aside .content-wrapper {
     flex-flow: row nowrap;
     justify-content: space-around;
   }
 
-  .form-description {
-    padding: 0;
-    /*flex-basis: 260px;*/
-  }
-
-  .signup-form {
-    /*flex-basis: 290px;*/
-  }
 
   .feature-items {
       flex-flow: row wrap; /* to wrap the items  */
@@ -707,6 +776,17 @@ input[type=button] {
   }
 
   /* ------ about styles------- */
+  .mission {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: column;
+  }
+
+  .mission .content-wrapper {
+      background-color: #537158;
+}
+
   .mission-content {
     display: flex;
     align-items: center;
