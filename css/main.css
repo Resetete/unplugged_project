@@ -276,6 +276,12 @@ footer .social-icons {
     justify-content: space-between;
 }
 
+.social-icons i {
+    padding: 0 10px;
+    font-size: 2.5em;
+    color: #537158;
+}
+
 footer {
     flex-flow: column; /* to turn the two divs ("content-wrapper" + "copyright") into flex items + let them appear below  */
 }
@@ -398,13 +404,13 @@ input[type=button] {
     flex-flow: column; /* to wrap the items  */
 }
 
-.features article {
+.features article { /* centering icons */
   width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column;
 }
-
-/*.feature-items p {
-  padding-bottom: 54%;
-}*/
 
 /* -- styling icons -- */
 .features i {
