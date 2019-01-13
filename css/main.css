@@ -144,7 +144,7 @@ h3 {
 }
 
 h4 {
-  margin: 20px 0;
+  margin: 10px 0;
   padding: 0px;
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
@@ -272,10 +272,6 @@ footer .social {
     align-items: center;
     justify-content: center;
     flex-flow: column;
-}
-
-footer h4 {
-    padding-bottom: 10px;
 }
 
 footer .social-icons {
@@ -484,14 +480,6 @@ figure .group-photo {
     background-color: #537158;
 }
 
-.faq h2 {
-  padding-top: 50px;
-}
-
-.faq h3 {
-  padding-bottom: 13px;
-}
-
 .faq .content-wrapper {
     display: flex;
     justify-content: center;
@@ -595,6 +583,7 @@ figure .group-photo {
 
     h1 {
       font-size: 3em;
+      padding-top: 50px;
     }
 
     h2 {
@@ -685,18 +674,18 @@ figure .group-photo {
    }
 
     /* ------ about styles------- */
-  .mission-content {
+   .mission-content {
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-flow: row nowrap;
   }
 
-  .mission-content p {
+   .mission-content p {
      flex-basis: 45%; /* to auto grow/shrink --> in % */
   }
 
-  .contact-section .content-wrapper address {
+   .contact-section .content-wrapper address {
       display: flex;
       width: 100%;
       justify-content: space-around;
@@ -705,8 +694,10 @@ figure .group-photo {
   }
 
   /* ---- FAQ styles ------ */
-  .faq h2 {
-      padding-bottom: 40px;
+  .faq {
+      display: flex;
+      justify-content: center;
+      align-items: center;
   }
 
   .faq .content-wrapper {
@@ -728,8 +719,6 @@ figure .group-photo {
       justify-content: space-around;
       align-items: flex-start;
   }
-
-
 }
 
 @media only screen and (min-width: 1200px) {
@@ -744,16 +733,28 @@ figure .group-photo {
   }
 
   h3 {
-    font-size: 1.5em;
+    font-size: 1.6em;
   }
 
   h4 {
+    font-size: 1.4em;
+  }
+
+  p {
     font-size: 1.2em;
   }
 
+  a {
+    font-size: 1.5em;
+  }
+
   header figure {
-      width: 80%;
+      width: 60%;
       flex-flow: row nowrap;
+  }
+
+  header figure img {
+      width: 120%;
   }
 
   aside .content-wrapper {
@@ -789,14 +790,14 @@ figure .group-photo {
     align-items: flex-start;
  }
 
- .review article {
-   display: flex;
-   justify-content: space-between;
-   align-items: flex-start;
-   flex-flow: row wrap;
-   margin: 0;
-   padding: 0;
- }
+  .review article {
+     display: flex;
+     justify-content: space-between;
+     align-items: flex-start;
+     flex-flow: row wrap;
+     margin: 0;
+     padding: 0;
+  }
 
   .review-text {
     flex-basis: 48%;
@@ -809,7 +810,6 @@ figure .group-photo {
  .review h3 {
    margin: 0 0 10px 0;
  }
-
 
   /* ------ about styles------- */
   .mission {
@@ -843,10 +843,6 @@ figure .group-photo {
   }
 
   /* ---- FAQ styles ------ */
-  .faq h2 {
-      padding-bottom: 40px;
-  }
-
   .faq .content-wrapper {
       flex-flow: row wrap;
       justify-content: space-between;
@@ -865,7 +861,6 @@ figure .group-photo {
     justify-content: space-around;
     align-items: flex-start;
   }
-
 }
 /* ==========================================================================
    Print styles.
