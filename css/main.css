@@ -495,7 +495,7 @@ figure .group-photo {
 }
 
 .faq-content {
-    padding-bottom: 50px;
+    padding-top: 50px;
 }
 
 /* ==========================================================================
@@ -713,6 +713,11 @@ figure .group-photo {
 
   .faq-content {
     flex-basis: 45%;
+  }
+
+  .faq h1 {
+    margin: 0;
+    padding: 0;
   }
 
   /* ---- Footer styles ------ */
